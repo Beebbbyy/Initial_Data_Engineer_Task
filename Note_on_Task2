@@ -1,0 +1,5 @@
+##Note on Task 2
+
+Loading cleaned data into SQL Server on a Mac requires a workaround using Docker, as direct installation of SQL Server is not supported on macOS. The initial data processing and cleaning steps are performed using Spark, which is capable of handling large datasets efficiently. After cleaning the data (ensuring passenger_count > 0), a Spark DataFrame is used to hold the prepared data. The steps provided above guide through the process of setting up a SQL Server instance in a Docker container, ensuring an environment that closely replicates a native SQL Server setup. The cleaned data, now in a Spark DataFrame, is then loaded into the SQL Server database, leveraging Spark's ability to interface with SQL databases for data ingestion.
+
+This adjustment emphasizes the role of Spark in the data preparation phase, clarifying the complete workflow from data cleaning to loading into SQL Server on a Mac using Docker.
